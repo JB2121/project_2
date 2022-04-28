@@ -1,0 +1,14 @@
+Requirements:
+
+1) Build a transactional website: I wanted to work on my initial website and clean up the HTML and use CSS for style. Therefore, I added on a shopping cart to make it transactional. That is where most of the use of DOM properties and methods took place. 
+
+2) 3 HTML pages with Javascipt 
+    a. Landing page with modal
+    b. shopping
+    c. Contact us
+
+3) Create a Login and Registration page that authenticated by writing and reaching from LocalStorage. This is covering the main site. 
+
+4) Use of DOM - minimum of 5 different type of DOM properties and methods used. I used: getelementbyID, queryselector, getattricute, addeventLister and removeitem
+
+5) Usage of Style va CSS or a 3rd party library - leveraged this on all page. While not perfect, I did learn quite a bit including the flexbox. 

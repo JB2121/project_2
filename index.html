@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+
+  <head>
+    <title>BachmanNFT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <section class="topnav">
+      <a href="contact.html">CONTACT</a>
+      <a href="./shop.html">SHOP</a>
+      <a href="services.html">SERVICES</a>
+      <a href="work.html">WORK</a>
+      <a href="about.html">ABOUT</a>
+      <a href="index.html">HOME</a>
+      <img src="./img/Logo.jpg" alt="Logo" />
+    </section>
+  </head>
+
+  <script>
+    $(document).ready(function () {
+      $("#myModal").modal("show");
+    });
+  </script>
+
+  <body>
+    <div id="header"></div>
+    <section>
+      <img
+        src="./img/Cover_Photo_2.jpg"
+        alt="Digital"
+        width="100%"
+        height="auto"
+      />
+    </section>
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="login">
+            <form name="form-login" onsubmit="event.preventDefault(); store()">
+              <h1>REGISTER</h1>
+
+              <label for="name">Email</label>
+              <input type="email" id="name" placeholder="Username" required />
+
+              <label for="pw">Password</label>
+              <input type="password" id="pw" placeholder="Password" required />
+
+              <ul class="helper-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">
+                  Must contain a number or special character.
+                </li>
+              </ul>
+              <input id="rgstr_btn" type="submit" value="Register" />
+            </form>
+          </div>
+
+          <div class="login">
+            <form name="form-login">
+              <h1>SIGN IN</h1>
+
+              <label for="userName">Email</label>
+              <input
+                type="email"
+                id="userName"
+                placeholder="Username"
+                required
+              />
+
+              <label for="userPw">Password</label>
+              <input
+                type="password"
+                id="userPw"
+                placeholder="Password"
+                required
+              />
+
+              <div id="remember">
+                <input
+                  type="checkbox"
+                  value="lsRememberMe"
+                  id="rememberMe"
+                  style="display: inline-block"
+                />
+                <label>Remember me</label>
+              </div>
+
+              <input
+                id="login_btn"
+                type="submit"
+                value="Login"
+                onclick="check()"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <section class="container">
+      <div class="about">
+        <h3>About Us</h3>
+        <p>
+          BachmanNFT leverages the newest technologies and digital tactics to
+          make your brand become a household name. When it comes to marketing,
+          we don't just throw shit at the wall and hope it sticks - we use data
+          to drive our decisons.
+        </p>
+      </div>
+      <div class="services">
+        <h3>Services</h3>
+        <ul>
+          <li>Web Design</li>
+          <li>Social Media</li>
+          <li>Email Marketing</li>
+          <li>Digital Analytics</li>
+          <li>Public Relations</li>
+          <li>Influencer Marketing</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Address: 2121 S. 9th St, St. Louis, Mo 63104</li>
+          <li>Phone: 314-471-8344</li>
+          <li>Email: WinBig@BachmannDigital.com</li>
+        </ul>
+      </div>
+    </section>
+    <section class="copyright">Copyright &copy; Bachmann Digital 2022</section>
+  </footer>
+</html>
